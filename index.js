@@ -43,7 +43,7 @@ function all() {
 }
 
 module.exports = {
-    go: start,
+    start: start,
     record: record,
     end: end,
     all: all

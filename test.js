@@ -1,6 +1,6 @@
 var step = require('./index');
 
-step.go();
+step.start();
 
 setTimeout(function() {
     step.record();
