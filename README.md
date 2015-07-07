@@ -6,6 +6,10 @@
 
 for NodeJS
 
+### 特点
+
+混而不乱，可同时统计多种日志，按需输出
+
 ### 安装
 
 `npm install step-timer`
@@ -16,17 +20,22 @@ for NodeJS
 ```javascript
 var timer = require('step-timer');
 
-timer.start('Hi');
+step.start('Hi');
+step.start('Hello');
 
-timer.record('Hi', 'Step1');
-timer.record('Hi', 'Step2');
+step.record('Hi', 'Step1');
+step.record('Hi', 'Step2');
+
+step.record('Hello');
 
 for (var i = 0; i < 100000000; i++) {
 }
 
-timer.end('Hi', 'EndStep-Step3', function(a,b,c, d) {
-    console.log(a,timer.paddy(b, d),c)
-});
+step.end('Hi', 'EndStep-Step3');
+
+step.record('Hello');
+
+step.end('Hello');
 ```
 
 ==>
@@ -35,6 +44,10 @@ timer.end('Hi', 'EndStep-Step3', function(a,b,c, d) {
 [Hi]第[        Step1]步 耗时 0
 [Hi]第[        Step2]步 耗时 0
 [Hi]第[EndStep-Step3]步 耗时 100
+
+[Hello]第[1]步 耗时 1
+[Hello]第[2]步 耗时 100
+[Hello]第[3]步 耗时 0
 ```
 
 

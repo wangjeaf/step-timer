@@ -32,7 +32,6 @@ function record(key, subkey) {
 }
 
 function output(key, record, fn) {
-
     key = key || GLOBAL_KEY;
 
     var formatter = config.formatter;
@@ -44,7 +43,7 @@ function output(key, record, fn) {
 
     var max = 0;
     var min = Number.MAX_VALUE;
-    var maxKeyLen = (steps[0].subkey || '').length;
+    var maxKeyLen = String(steps[0].subkey || '').length;
 
     steps[0].delta = steps[0].time - start;
 
@@ -58,7 +57,7 @@ function output(key, record, fn) {
         if (next.delta < min) {
             min = next.delta;
         }
-        var keyLen = (next.subkey || '').length;
+        var keyLen = String(next.subkey || '').length;
         if (keyLen > maxKeyLen) {
             maxKeyLen = keyLen;
         }
