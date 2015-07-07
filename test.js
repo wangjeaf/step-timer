@@ -1,13 +1,13 @@
 var step = require('./index');
 
-step.start();
+step.start('Hi');
 
-setTimeout(function() {
-    step.record();
-}, 100);
+step.record('Hi', 'H1');
+step.record('Hi', 'H123');
 
-setTimeout(function() {
-    step.record();
+for (var i = 0; i < 100000000; i++) {
+}
 
-    step.end();
-}, 1000);
+step.end('Hi', function(a,b,c, d) {
+    console.log(a,step.paddy(b, d),c)
+});
