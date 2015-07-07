@@ -1,5 +1,11 @@
 ## Step计时器
 
+### 干啥的？
+
+统计并漂亮的输出：从A到B到C到...到Z，每一步花了多少时间。
+
+for NodeJS
+
 ### 安装
 
 `npm install step-timer`
