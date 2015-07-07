@@ -4,7 +4,7 @@ var cache = {};
 
 var config = {
     formatter: function (key, subkey, delta, maxKeyLen) {
-        console.log('[' + key + ']第[' + paddy(subkey, maxKeyLen), + ']步 耗时 ' + delta)
+        console.log('[' + key + ']第[' + paddy(subkey, maxKeyLen) + ']步 耗时 ' + delta)
     }
 };
 
@@ -88,9 +88,9 @@ function paddy(str, maxLen) {
     return new Array(maxLen - len + 1).join(' ') + str;
 }
 
-function end(key, fn) {
+function end(key, subkey, fn) {
     key = key || GLOBAL_KEY;
-    record(key);
+    record(key, subkey);
 
     var obj = cache[key];
     output(key, obj, fn);
