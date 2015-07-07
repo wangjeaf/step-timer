@@ -26,10 +26,10 @@ step.end('Hi', 'EndStep-Step3', function(a,b,c, d) {
 ==>
 
 ```
-```
 [Hi]第[        Step1]步 耗时 0
 [Hi]第[        Step2]步 耗时 0
 [Hi]第[EndStep-Step3]步 耗时 100
+```
 
 
 ### 自定义格式
