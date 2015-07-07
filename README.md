@@ -2,24 +2,24 @@
 
 ### 安装
 
-npm install stepper
+`npm install step-timer`
 
 
 ### 使用
 
 ```javascript
-var step = require('./index');
+var timer = require('step-timer');
 
-step.start('Hi');
+timer.start('Hi');
 
-step.record('Hi', 'Step1');
-step.record('Hi', 'Step2');
+timer.record('Hi', 'Step1');
+timer.record('Hi', 'Step2');
 
 for (var i = 0; i < 100000000; i++) {
 }
 
-step.end('Hi', 'EndStep-Step3', function(a,b,c, d) {
-    console.log(a,step.paddy(b, d),c)
+timer.end('Hi', 'EndStep-Step3', function(a,b,c, d) {
+    console.log(a,timer.paddy(b, d),c)
 });
 ```
 
@@ -35,8 +35,8 @@ step.end('Hi', 'EndStep-Step3', function(a,b,c, d) {
 ### 自定义格式
 
 ```
-step.end('Hi', 'EndStep-Step3', function(a,b,c, d) {
-    console.log(a,step.paddy(b, d),c)
+timer.end('Hi', 'EndStep-Step3', function(a,b,c, d) {
+    console.log(a,timer.paddy(b, d),c)
 });
 ```
 

@@ -1,12 +1,12 @@
 {
-  "name": "stepper",
+  "name": "step-timer",
   "version": "0.1.0",
   "description": "step计时器",
-  "homepage": "https://github.com/wangjeaf/stepper",
+  "homepage": "https://github.com/wangjeaf/step-timer",
   "keywords": [
-    "Stepper",
+    "step-timer",
     "Timer",
-    "Record"
+    "Recorder"
   ],
   "author": "wangjeaf <wangjeaf@gmail.com>",
   "contributors": [
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wangjeaf/stepper"
+    "url": "https://github.com/wangjeaf/step-timer"
   },
   "main": "./index.js",
   "scripts": {

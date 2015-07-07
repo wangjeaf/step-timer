@@ -8,7 +8,7 @@ var config = {
     }
 };
 
-var GLOBAL_KEY = 'STEPPER';
+var GLOBAL_KEY = 'timer';
 
 function start(key) {
     key = key || GLOBAL_KEY;
@@ -85,7 +85,7 @@ function paddy(str, maxLen) {
     if (len >= maxLen) {
         return str;
     }
-    return new Array(maxLen - len + 1).join(' ') + str;
+    return str + new Array(maxLen - len + 1).join(' ');
 }
 
 function end(key, subkey, fn) {
