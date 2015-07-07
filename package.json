@@ -1,0 +1,32 @@
+{
+  "name": "stepper",
+  "version": "0.1.0",
+  "description": "Nodejs Plugin for RAP.",
+  "homepage": "https://github.com/wangjeaf/stepper",
+  "keywords": [
+    "Stepper",
+    "Timer",
+    "Record"
+  ],
+  "author": "wangjeaf <wangjeaf@gmail.com>",
+  "contributors": [
+    "wangjeaf <wangjeaf@gmail.com>"
+  ],
+  "engines": {
+    "node": ">= 0.8.17"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+    "colors": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangjeaf/stepper"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "preferGlobal": false
+}
